@@ -1,4 +1,4 @@
-package com.fishdoctor.app.menu.adapters.dtos;
+package com.fishdoctor.app.menu.domain;
 
 public class Menu {
     private String id;

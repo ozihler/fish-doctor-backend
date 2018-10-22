@@ -1,10 +1,8 @@
-package com.fishdoctor.app.menu.application.services;
+package com.fishdoctor.app.menu.domain.services;
 
-import com.fishdoctor.app.menu.adapters.dtos.Menu;
-import com.fishdoctor.app.menu.factories.MenuFactory;
-import org.springframework.stereotype.Service;
+import com.fishdoctor.app.menu.domain.Menu;
+import com.fishdoctor.app.menu.domain.factories.MenuFactory;
 
-@Service
 public class MenuService {
     private MenuFactory menuFactory;
 

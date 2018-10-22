@@ -1,6 +1,7 @@
-package com.fishdoctor.app.menu.adapters.dtos;
+package com.fishdoctor.app.menu.domain;
 
 import java.util.List;
+import java.util.Objects;
 
 public class MenuNode {
     private String id;
@@ -23,5 +24,9 @@ public class MenuNode {
 
     public List<MenuNode> getMenuNodes() {
         return menuNodes;
+    }
+
+    public   boolean hasMoreSubNodes() {
+        return !Objects.isNull(getMenuNodes()) && !getMenuNodes().isEmpty();
     }
 }

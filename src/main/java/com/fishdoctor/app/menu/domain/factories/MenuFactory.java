@@ -1,7 +1,7 @@
-package com.fishdoctor.app.menu.factories;
+package com.fishdoctor.app.menu.domain.factories;
 
-import com.fishdoctor.app.menu.adapters.dtos.Menu;
-import com.fishdoctor.app.menu.adapters.dtos.MenuNode;
+import com.fishdoctor.app.menu.domain.Menu;
+import com.fishdoctor.app.menu.domain.MenuNode;
 
 import java.util.Arrays;
 
