@@ -8,8 +8,8 @@ import static org.springframework.hateoas.mvc.ControllerLinkBuilder.linkTo;
 import static org.springframework.hateoas.mvc.ControllerLinkBuilder.methodOn;
 
 public class MenuDtoFactory {
-    public static MenuDto createFrom(Menu menu) {
-        MenuDto menuDto = new MenuDto(menu.getId(), MenuNodeDtoFactory.createFrom(menu.getHeadNode()));
+    public static MenuDto from(Menu menu) {
+        MenuDto menuDto = new MenuDto(menu.getId(), MenuNodeDtoFactory.from(menu.getHeadNode()));
         menuDto.add(selfLink());
         return menuDto;
     }

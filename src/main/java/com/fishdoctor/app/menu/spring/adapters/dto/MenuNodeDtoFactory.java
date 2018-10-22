@@ -7,7 +7,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class MenuNodeDtoFactory {
-    public static MenuNodeDto createFrom(MenuNode headNode) {
+    public static MenuNodeDto from(MenuNode headNode) {
         MenuNodeDto menuNodeDto = new MenuNodeDto(headNode.getId(), headNode.getTitle(), subMenuTree(headNode));
 
         return menuNodeDto;
@@ -19,7 +19,7 @@ public class MenuNodeDtoFactory {
         }
         return node.getMenuNodes()
                 .stream()
-                .map(MenuNodeDtoFactory::createFrom)
+                .map(MenuNodeDtoFactory::from)
                 .collect(Collectors.toList());
     }
 }
